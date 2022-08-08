@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+}
+.brandName{
+    padding-left: 20px;
+    font-weight: bold;
+}
+.brandNameColor{
+    color: white;
+}
+.navItems {
+    display: flex;
+    list-style-type: none;
+    padding-right: 50px;
+}
+
+.navItems > li {
+    padding: 15px;
+    color: white;
+    font-weight: bold;
+}
