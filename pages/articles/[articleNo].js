@@ -35,7 +35,7 @@ export const getStaticProps = async (context) => {
 const articleNo = ({ article }) => {
   return (
     <div>
-      <Meta title={article.title}></Meta>
+      <Meta title={article.title} description={article.body}></Meta>
       <Navbar></Navbar>
       <div className={styles.posts_div}>
         <h1>{article.id}.</h1>

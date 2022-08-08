@@ -35,9 +35,10 @@ export const getStaticProps = async (context) => {
 const DynamicPost = ({ data }) => {
   // const router = useRouter();
   // const pageNo = router.query.postNo;
+  // console.log(pageNo)
   return (
     <div>
-      <Meta title={data.title}></Meta>
+      <Meta title={data.title} description={data.body}></Meta>
       <Navbar></Navbar>
       <div className={styles.posts_div}>
         <h1>{data.id}.</h1>
